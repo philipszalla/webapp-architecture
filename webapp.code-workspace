@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "path": "frontend"
+    },
+    {
+      "path": "backend"
+    }
+  ],
+  "settings": {
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  },
+  "extensions": {
+    "recommendations": ["esbenp.prettier-vscode"]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [],
+    "compounds": [
+      {
+        "name": "Run webapp",
+        "configurations": [
+          ".NET Core Launch (web)",
+          "Run frontend dev server",
+          "Launch Edge"
+        ],
+        "stopAll": true
+      }
+    ]
+  }
+}

@@ -6,6 +6,22 @@
       "name": "Run frontend dev server",
       "request": "launch",
       "type": "node-terminal"
+    },
+    {
+      "name": "Launch Edge",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:5173"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run frontend",
+      "configurations": [
+        "Run frontend dev server",
+        "Launch Edge"
+      ],
+      "stopAll": true,
     }
   ]
 }
